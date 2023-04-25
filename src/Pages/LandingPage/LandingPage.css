@@ -1,0 +1,524 @@
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: hsl(205, 78%, 60%);
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #222;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+  --left-value: 100%;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@100;600&family=Public+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,600&family=Quattrocento:wght@400;700&display=swap");
+
+/* font-family: 'Alegreya', serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Public Sans', sans-serif;
+font-family: 'Quattrocento', serif; */
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: var(--clr-white);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+
+  overflow-x: hidden;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+    background: var(--clr-white);
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+.main-container {
+  /* margin-top: 5.375rem; */
+  margin-top: 0;
+}
+/*
+===================== 
+Video Slide Section
+=====================
+*/
+
+.first-section {
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+.SlideContainer {
+  position: relative;
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+
+  position: absolute;
+}
+/* .slide-btn-container {
+  display: none;
+  justify-content: center;
+  position: relative;
+  top: 43%;
+  height: 4rem;
+} */
+.left-btn,
+.right-btn {
+  visibility: hidden;
+}
+@media screen and (min-width: 912px) {
+  .slide-btn-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 4rem;
+    top: 43%;
+  }
+  .left-btn {
+    display: flex;
+    width: 4rem;
+    height: 100%;
+    justify-content: center;
+    left: 4%;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    border: none;
+    align-items: center;
+    position: absolute;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+    visibility: visible;
+  }
+  .right-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    width: 4rem;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    right: 4%;
+    border: none;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+    visibility: visible;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .slide-btn-container {
+    display: flex;
+    top: 43.7%;
+  }
+  .left-btn {
+    display: flex;
+    width: 4rem;
+    height: 100%;
+    justify-content: center;
+    left: 4%;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    border: none;
+    align-items: center;
+    position: absolute;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+    visibility: visible;
+  }
+  .right-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    width: 4rem;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    right: 4%;
+    border: none;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.9);
+    visibility: visible;
+  }
+}
+
+/* ========================= 
+ new vehicle Slide Section 
+============================== */
+.second-Section {
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  margin: 2rem 0 3rem 0;
+}
+.new-vehicle-heading {
+  width: 100%;
+  height: fit-content;
+  color: #222;
+  margin-bottom: 2rem;
+  padding: 0.7rem;
+}
+
+.new-vechicle-slide-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 0 0.5rem;
+  gap: 10px;
+  transition: 0.5s ease-in-out;
+}
+.vehicle-slide {
+  width: 21.5625rem;
+  margin: 0 0.5rem 0 0.5rem;
+}
+.vehicleImage {
+  width: 21.5625rem;
+  height: 15.5625rem;
+}
+.vehicleImage img {
+  object-fit: cover;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+.new-vehicle-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.27);
+  width: 21.5625rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.year-type-cover {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem;
+  color: var(--clr-black);
+  height: 2.375rem;
+}
+.year-type-cover > .line {
+  display: flex;
+  text-align: center;
+  font-size: 1rem;
+}
+.year-type-cover > .year {
+  font-size: 1rem;
+  margin: 0 1rem 0 0;
+}
+.year-type-cover > .type {
+  font-size: 1rem;
+  margin: 0 0 0 1rem;
+}
+.brand-features-amount-cover {
+  display: flex;
+  margin-top: 0.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.5rem;
+  color: var(--clr-black);
+}
+.brand-features-amount-cover h4 {
+  font-size: 1.1rem;
+}
+.brand-features-amount-cover > .features {
+  margin-bottom: 0.5rem;
+}
+.brand-features-amount-cover > .features > h5 {
+  font-size: 1rem;
+  margin: 0rem;
+}
+.brand-features-amount-cover > .features > p {
+  color: var(--clr-black);
+  font-weight: 450;
+}
+.amount-explore-cover {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.amount-explore-cover .amount {
+  font-size: 1.2rem;
+  margin: 0 1rem 0 0;
+}
+.amount-explore-cover .line-two {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.amount-explore-cover > .explore-btn {
+  width: 7rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  margin: 0 0 0 1rem;
+  border-radius: 0.3rem;
+  border: none;
+  color: var(--clr-white);
+  background-color: var(--clr-black);
+  padding: 0.3rem;
+  text-transform: capitalize;
+}
+.slide-counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+.counter {
+  display: flex;
+}
+.slide-counter {
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: rgba(0, 0, 0, 0.27);
+
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+.counter .active {
+  background-color: var(--clr-black);
+}
+.sec-two-prev-btn,
+.sec-two-next-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: var(--clr-black);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .vehicle-slide {
+    width: 28.5625rem;
+    margin: 0 0.5rem 0 0.5rem;
+  }
+  .vehicleImage {
+    width: 28.5625rem;
+    height: 15.5625rem;
+  }
+  img {
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+  }
+  .new-vehicle-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.27);
+    width: 28.5625rem;
+    height: 20.375rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .vehicle-slide {
+    display: flex;
+    width: 52.125rem;
+    margin: 0 0.5rem 0 0.5rem;
+  }
+  .vehicleImage {
+    height: 20.4125rem;
+    width: 30.5625rem;
+    background-position: center;
+    background-size: cover;
+  }
+  .vehicleImage img {
+    border-top-right-radius: 0rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+  }
+  .new-vehicle-details {
+    background: rgba(0, 0, 0, 0.27);
+    width: 17.375rem;
+    height: 20.4125rem;
+    border-bottom-left-radius: 0rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  .brand-features-amount-cover > .features {
+    margin-top: 0rem;
+  }
+
+  .brand-features-amount-cover > .features > h4 {
+    margin-bottom: 0.2rem;
+  }
+  .brand-features-amount-cover > .features > p {
+    font-size: 0.85rem;
+  }
+  .amount-explore-cover {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0.1rem;
+  }
+  .slide-counter {
+    width: 1rem;
+    height: 1rem;
+    background-color: rgba(0, 0, 0, 0.27);
+
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 0.5rem;
+  }
+  .counter .active {
+    background-color: var(--clr-black);
+    transition: 0.5s ease-in-out;
+  }
+  .sec-two-prev-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: var(--clr-black);
+    cursor: pointer;
+  }
+  .sec-two-next-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: var(--clr-black);
+    cursor: pointer;
+  }
+}
+
+/* ============================== 
+ Electrified Slide Section 
+==============================  */
+.third-Section {
+  width: 100%;
+  background-color: #fbf9f4;
+  margin-bottom: 5rem;
+}
+.heading {
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 2rem 0;
+  padding: 10px;
+}
+.heading h1 {
+  font-size: 2.7rem;
+}
