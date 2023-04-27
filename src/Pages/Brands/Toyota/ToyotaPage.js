@@ -16,21 +16,22 @@ const ToyotaPage = () => {
   };
   return (
     <main className="main-container">
-      <section className="fixed-hero-container">
-        <div className="fixed-hero-image">
+      <section className="Fixed-Hero-Container">
+        <div className="Fixed-Hero-Image">
           <img src="./images/TOYOTAL/Toyota head.png" alt="Toyota Head" />
         </div>
       </section>
-      <section className="showroom-section">
-        <div className="showroom-header">
+      <section className="Showroom-Section">
+        <div className="Showroom-Header">
           <p>TOYOTA SHOWROOM</p>
         </div>
-        <nav className="tab-nav-cont">
+        {/* Tab Navigation--Category */}
+        <nav className="Nav-Tab-Cont">
           {ToyotaCategory.map((tablist, index) => {
             const { tab, id } = tablist;
             return (
               <button
-                className={`tab-nav ${
+                className={`Nav-Tab ${
                   activeToyotaTab === index ? "active-tab" : ""
                 }`}
                 key={id}
@@ -41,28 +42,29 @@ const ToyotaPage = () => {
             );
           })}
         </nav>
-        <article className="tabSlide-cont">
+        {/* Tab Navigation--Active Category */}
+        <article className="Active-Cat-cont">
           {ToyotaCategory.map((items, itemIndex) => {
             const { subcat } = items;
             return (
               <div
-                className={`tabSlide ${
+                className={`Cat-Tab-Slide ${
                   activeToyotaTab === itemIndex ? "active" : ""
                 }`}
                 key={itemIndex}
               >
                 {subcat &&
                   subcat.map((category, infoIndex) => {
-                    const { Image, Names, Explore, ArrowIcon } = category;
+                    const { Image, Names } = category;
                     return (
                       <div
-                        className={`category-container ${
+                        className={`Category-Container ${
                           activeToyotaCategory === infoIndex ? "active" : ""
                         }`}
                         key={infoIndex}
                         onClick={() => handleCategoryClick(infoIndex)}
                       >
-                        <div className="category">
+                        <div className="Category">
                           <img src={Image} alt={Names} />
                         </div>
                       </div>
@@ -72,37 +74,38 @@ const ToyotaPage = () => {
             );
           })}
         </article>
-        <article className="Image-category-container">
+        {/* Image Category Slide */}
+        <article className="Image-Cat-Cont">
           {ToyotaCategory.map((imageList, imageListIndex) => {
             const { catImage } = imageList;
             return (
               <div
-                className={`Image-category ${
+                className={`Active-Cat-Image ${
                   activeToyotaTab === imageListIndex ? "active" : ""
                 }`}
                 key={imageListIndex}
               >
-                <div className="images-container">
+                <div className="Images-Container">
                   {catImage &&
                     catImage.map((images, imageIndex) => {
                       const { image, name, explore, year, quote } = images;
                       return (
                         <div
-                          className={`images ${
+                          className={`Images ${
                             activeToyotaCategory === imageIndex ? "active" : ""
                           }`}
                           key={imageIndex}
                         >
                           <img src={image} alt={name} />
 
-                          <div className="images-details">
-                            <div className="images-description">
+                          <div className="Images-Details">
+                            <div className="Images-Description">
                               <p>{year}</p>
                               <h2>{name}</h2>
                             </div>
-                            <div className="explore-images">
+                            <div className="Explore-Images">
                               <p>{quote}</p>
-                              <button className="explore-btn">{explore}</button>
+                              <button className="Explore-Btn">{explore}</button>
                             </div>
                           </div>
                         </div>

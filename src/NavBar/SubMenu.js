@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { useGlobalContext } from "../GlobalContext";
 import { NavLink } from "react-router-dom";
 
@@ -7,32 +7,39 @@ const SubMenu = () => {
     openSubMenu,
     closeSubMenu,
     isSubMenuOpen,
-    page: { Links, names },
+    location,
+    page: { names, Links },
   } = useGlobalContext();
 
   const dropdownRef = useRef();
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        closeSubMenu();
-      }
-    };
+  // useEffect(() => {
+  //   const submenu = dropdownRef.current;
+  //   const { bottom } = location;
+  //   submenu.style.bottom = `${bottom}px`;
+  // }, [location]);
 
+  // Click outside the Submenu to close
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      closeSubMenu();
+    }
+  };
+  useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [dropdownRef]);
+  }, []);
 
+  // Scroll greater than zero to close Submenu
+  const handleScroll = () => {
+    if (openSubMenu && dropdownRef.current && window.pageYOffset > 0) {
+      closeSubMenu();
+    }
+  };
   useEffect(() => {
-    const handleScroll = () => {
-      if (openSubMenu && dropdownRef.current && window.pageYOffset > 0) {
-        closeSubMenu();
-      }
-    };
-
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);

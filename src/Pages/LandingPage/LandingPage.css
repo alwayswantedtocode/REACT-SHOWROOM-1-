@@ -258,7 +258,7 @@ Video Slide Section
 }
 .new-vehicle-heading {
   width: 100%;
-  height: fit-content;
+  height: max-content;
   color: #222;
   margin-bottom: 2rem;
   padding: 0.7rem;

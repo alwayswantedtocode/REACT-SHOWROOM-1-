@@ -1,4 +1,4 @@
-import React, { useState, useRef, useContext } from "react";
+import React, { useState, useContext } from "react";
 import SubMenuLinks from "./NavBar/NavbarData";
 
 const GlobalContext = React.createContext();
@@ -7,11 +7,11 @@ export const AppProvider = ({ children }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
 
-  // const [location, setLocation]= useState({});
+  const [location, setLocation] = useState({});
 
   const [page, setPage] = useState({
+    names: "",
     Links: [],
-    // names: "",
   }); //refer to read.me
 
   //Slide Menu
@@ -22,11 +22,10 @@ export const AppProvider = ({ children }) => {
     setIsMobileMenuOpen(false);
   };
 
-  const openSubMenu = (text) => {
-    const page = SubMenuLinks.find(
-      (submenuContent) => submenuContent.page === text
-    );
-    setPage(page);
+  const openSubMenu = (text, coordinates) => {
+    const names = SubMenuLinks.find((link) => link.page === text);
+    setPage(names);
+    setLocation(coordinates);
     setIsSubMenuOpen(true);
   };
   const closeSubMenu = () => {
@@ -43,6 +42,7 @@ export const AppProvider = ({ children }) => {
         openSubMenu,
         closeSubMenu,
         isSubMenuOpen,
+        location,
         page,
       }}
     >

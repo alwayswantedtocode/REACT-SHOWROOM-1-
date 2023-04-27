@@ -204,7 +204,7 @@ WebView scrollbar Styles
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background-color: #ffffff;
+  background-color: #f5f3f3;
 }
 ::-webkit-scrollbar-thumb {
   background-color: rgb(219, 219, 219);
@@ -516,8 +516,7 @@ header {
   /* border: 2px solid fuchsia; */
   visibility: visible;
   width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: max-content;
   display: flex;
   flex-direction: column;
   background: rgba(247, 247, 247, 0.6);
@@ -530,7 +529,7 @@ header {
 } */
 .mobile-submenu-brands {
   width: 100%;
-  /* height: fit-content; */
+  height: max-content;
   /* border: 2px solid black; */
 }
 .mobile-submenu-brands h3 {

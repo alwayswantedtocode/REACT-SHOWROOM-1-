@@ -1,18 +1,41 @@
-import { Link, NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import Logo from "../NavBar/Logo";
 import { FaSearch, FaBars } from "react-icons/fa";
 import { useGlobalContext } from "../GlobalContext";
 
-import React from "react";
-
 const NavBar = () => {
   const { openMobileMenu, openSubMenu, closeSubMenu } = useGlobalContext();
 
-  const displaySubMenu = (e) => {
-    const brand = e.target.textContent;
-    openSubMenu(brand);
+  //DISAPEARING NAVBAR
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  const handleScroll = () => {
+    const currentScrollPos = window.pageYOffset;
+    const visibleNav = currentScrollPos < prevScrollPos;
+
+    setPrevScrollPos(currentScrollPos);
+    setVisible(visibleNav);
   };
 
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos, visible]);
+
+  //Mouseover buttons
+  const displaySubMenu = (e) => {
+    const brand = e.target.textContent;
+
+    const tempbtn = e.target.getBoundingClientRect();
+
+    const bottom = tempbtn.bottom - 3;
+    openSubMenu(brand, { bottom });
+    openSubMenu(brand);
+  };
   const removeSubMenu = (e) => {
     if (!e.target.classList.contains("navLink")) {
       // console.log(e.target);
@@ -22,7 +45,11 @@ const NavBar = () => {
 
   return (
     <header>
-      <nav className="Nav" onMouseOver={removeSubMenu}>
+      <nav
+        className="Nav"
+        style={{ display: visible ? "flex" : "none" }}
+        onMouseOver={removeSubMenu}
+      >
         <div className="NavContainer">
           <div className="navLogo">
             <NavLink to="/">
@@ -45,6 +72,7 @@ const NavBar = () => {
             <button className="signIn-btn">
               <NavLink className="navLink">Sign in</NavLink>
             </button>
+
             <button className="search-btn">
               <NavLink className="navLink">
                 <FaSearch />
