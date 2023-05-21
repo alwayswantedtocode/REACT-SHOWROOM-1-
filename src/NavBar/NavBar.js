@@ -31,10 +31,12 @@ const NavBar = () => {
     const brand = e.target.textContent;
 
     const tempbtn = e.target.getBoundingClientRect();
+    // console.log(tempbtn);
 
-    const bottom = tempbtn.bottom - 3;
+    const bottom = tempbtn.bottom;
     openSubMenu(brand, { bottom });
-    openSubMenu(brand);
+    // openSubMenu(brand);
+    console.log(bottom);
   };
   const removeSubMenu = (e) => {
     if (!e.target.classList.contains("navLink")) {

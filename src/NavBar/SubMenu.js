@@ -16,7 +16,7 @@ const SubMenu = () => {
   // useEffect(() => {
   //   const submenu = dropdownRef.current;
   //   const { bottom } = location;
-  //   submenu.style.bottom = `${bottom}px`;
+  //   submenu.style.top = `${bottom}px`;
   // }, [location]);
 
   // Click outside the Submenu to close

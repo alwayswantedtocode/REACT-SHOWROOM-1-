@@ -3,11 +3,13 @@ import Navbar from "../NavBar/NavBar";
 import SubMenu from "../NavBar/SubMenu";
 import SlideMenu from "../NavBar/SlideMenu";
 import Footer from "../Footer/Footer";
+// import Navigation from "../NavBar/Navigation";
 const Home = () => {
   return (
     <>
       <Navbar />
       <SubMenu />
+      {/* <Navigation/> */}
       <SlideMenu />
 
       <Outlet />

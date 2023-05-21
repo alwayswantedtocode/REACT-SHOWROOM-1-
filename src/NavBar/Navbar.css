@@ -219,9 +219,15 @@ WebView scrollbar Styles
 WebView Navigation Styles
 =====================
 */
+.Header{
+  width: max-content;
+  height: max-content;
+  position: relative;
+}
 header {
   width: 100%;
   min-height: 5.275rem;
+  /* height: max-content; */
   /* position: relative; */
   position: -webkit-sticky;
   position: sticky;
@@ -352,7 +358,7 @@ header {
   position: absolute;
   width: 100%;
   height: 80%;
-  z-index: 999;
+  z-index: 99;
   left: 0px;
   top: 5.34rem;
   transform: translateY(-85rem);
