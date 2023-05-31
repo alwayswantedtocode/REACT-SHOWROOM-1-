@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, {useEffect, useRef } from "react";
 import { useGlobalContext } from "../GlobalContext";
 import { NavLink } from "react-router-dom";
 
@@ -19,7 +19,7 @@ const SubMenu = () => {
   //   submenu.style.top = `${bottom}px`;
   // }, [location]);
 
-  // Click outside the Submenu to close
+  //// Click outside the Submenu to close
   const handleClickOutside = (event) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
       closeSubMenu();
