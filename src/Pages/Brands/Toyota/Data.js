@@ -18,7 +18,7 @@ import CrownHybrid1 from "../../../Images/TOYOTAL/crown/toyota-crown-2023-voici-
 import VenzaHybrid1 from "../../../Images/TOYOTAL/VENZA-HYBRID/VENZER-HYBRID-1.png";
 import BZ4X1 from "../../../Images/TOYOTAL/bZ4X/BZ4_MY23_0039_V001_1.png";
 
-         
+    //  BiCaretRight;     
 
 const ToyotaCategory = [
   {

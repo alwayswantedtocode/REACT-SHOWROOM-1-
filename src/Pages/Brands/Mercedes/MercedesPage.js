@@ -27,6 +27,7 @@ const MercedesPage = () => {
           <p>MERCEDES SHOWROOM</p>
         </div>
         {/* Tab Navigation--Category */}
+
         <nav className="Nav-Tab-Cont">
           {MercedesCategory.map((tablist, index) => {
             const { tab, id } = tablist;
@@ -44,6 +45,7 @@ const MercedesPage = () => {
           })}
         </nav>
         {/* Tab Navigation--Active Category */}
+
         <article className="Active-Cat-cont">
           {MercedesCategory.map((items, itemIndex) => {
             const { subcat } = items;
@@ -76,6 +78,7 @@ const MercedesPage = () => {
           })}
         </article>
         {/* Image Category Slide */}
+        
         <article className="Image-Cat-Cont">
           {MercedesCategory.map((imageList, imageListIndex) => {
             const { catImage } = imageList;

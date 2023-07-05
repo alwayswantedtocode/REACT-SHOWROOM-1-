@@ -26,6 +26,7 @@ const ElectricToyota = () => {
 
   return (
     // Go green image slider
+    
     <div className="T-Green-container">
       <div className="T-Green-slide-container">
         {data.map((toyota, Index) => {

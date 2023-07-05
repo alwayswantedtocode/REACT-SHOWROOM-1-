@@ -2,6 +2,8 @@ import React, { useState, useRef } from "react";
 import LxLexus from "../../../Images/LEXUS/LX600/Lx-Video-Edit-2-use.mp4";
 import { BiPlayCircle, BiPauseCircle, BiChevronRight } from "react-icons/bi";
 
+// e
+
 const SixthSlide = () => {
   const [isplay, setIsplay] = useState(false);
 

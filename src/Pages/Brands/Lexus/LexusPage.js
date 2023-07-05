@@ -42,6 +42,7 @@ const LexusPage = () => {
             );
           })}
         </nav>
+
         {/* Tab Navigation--Active Category */}
         <article className="Active-Cat-cont">
           {LexusCategory.map((items, itemIndex) => {
@@ -74,6 +75,7 @@ const LexusPage = () => {
             );
           })}
         </article>
+        
         {/* Image Category Slide */}
         <article className="Image-Cat-Cont">
           {LexusCategory.map((imageList, imageListIndex) => {

@@ -7,7 +7,6 @@ const SubMenu = () => {
     openSubMenu,
     closeSubMenu,
     isSubMenuOpen,
-    location,
     page: { names, Links },
   } = useGlobalContext();
 

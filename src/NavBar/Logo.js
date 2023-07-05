@@ -5,7 +5,6 @@ const Logo = () => {
     <div className="logoContainer">
       <div className="logo">
         <div className="firstCircle"></div>
-        {/* <div className="centerCircle"></div> */}
         <div className="secondCircle"></div>
       </div>
       <div className="TextContainer">showRoom</div>

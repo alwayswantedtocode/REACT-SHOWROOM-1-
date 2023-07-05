@@ -5,6 +5,7 @@ import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 const VideoSlide = ({ videoref }) => {
   const [videoslide, setVideoslide] = useState(Data);
   const [index, setIndex] = useState(0);
+  
   // const [childHeight, setChildHeight] = useState(0);
 
   const slideRef = useRef();

@@ -1,6 +1,7 @@
 import Venza from "../../../../Images//TOYOTAL/VENZA-HYBRID/VENZER-HYBRID-1.png";
 import VenzaInterior from "../../../../Images/TOYOTAL/VENZA-HYBRID/INTERIOR/VENZA-INTERIOR-1.webp";
 import SecondInterior from "../../../../Images/TOYOTAL/VENZA-HYBRID/INTERIOR/VENZA-INTERIOR-3.webp";
+// go
 const toyotaData = [
   {
     id: 1,

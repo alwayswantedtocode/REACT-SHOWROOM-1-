@@ -17,7 +17,7 @@ import UxHybrid from "../../../Images/LEXUS/UX-HYBRID/UX-WHITE-2.png";
 import RxHybrid3 from "../../../Images/LEXUS/RX-350-HYBRID/lexus-2023-rx-350-awd-executive-iridium-l.jpg";
 import EsHybrid1 from "../../../Images/LEXUS/ES/2022_lexus_es_16_1600x1200.jpg";
 import UxHybrid1 from "../../../Images/LEXUS/UX-HYBRID/Lexus-UXh-gallery-desktop-1440x811-LEX-UXH-MY23-0069.png";  
-
+{/* <BiCaretRight />, */}
       
 
 const LexusCategory = [

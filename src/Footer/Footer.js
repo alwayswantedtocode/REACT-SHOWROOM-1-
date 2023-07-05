@@ -3,7 +3,7 @@ import data from "./Footerdata";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const [info, setInfo] = useState(data);
+  const [info] = useState(data);
   return (
     <section className="footerSection">
       <footer className="footer">

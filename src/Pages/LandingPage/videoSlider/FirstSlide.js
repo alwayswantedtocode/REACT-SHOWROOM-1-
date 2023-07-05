@@ -45,6 +45,7 @@ const FirstSlide = () => {
   //   return () => {
   //     window.removeEventListener("scroll", handleScroll);
   //   };
+  
   // }, []);
 
   return (

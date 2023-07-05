@@ -23,7 +23,6 @@
   /* border: 2px solid yellow; */
   border-top-right-radius: 0rem;
   border-top-right-radius: 5rem;
-  /* border-bottom-right-radius: 5rem; */
   transition: all 0.5s linear;
   -webkit-transition: all 0.5s linear;
 }

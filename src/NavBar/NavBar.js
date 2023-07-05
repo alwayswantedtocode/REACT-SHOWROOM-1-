@@ -92,17 +92,6 @@ const NavBar = () => {
           }`}
         >
           <SubMenu className="mouseover" />
-          {/* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
-          totam quo dolorum neque? Natus id iste adipisci temporibus vero?
-          Ratione distinctio voluptas incidunt praesentium minima beatae, error,
-          exercitationem voluptatibus veritatis non quae soluta ipsam
-          necessitatibus laudantium perspiciatis, tempore illo reprehenderit
-          eius voluptatem labore aliquid explicabo recusandae. Dolorum eos eius
-          ad repudiandae itaque hic inventore minima dolores fugiat dolore omnis
-          nulla, mollitia modi ipsum excepturi repellendus vel beatae nam!
-          Dolorem similique id, consequuntur, quis dolorum ea consequatur
-          voluptate quibusdam dolor tempora vero? Dolore quam ducimus aut quo
-          sed expedita placeat itaque! */}
         </aside>
       </nav>
     </header>

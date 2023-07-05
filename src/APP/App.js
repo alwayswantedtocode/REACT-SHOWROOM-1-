@@ -38,28 +38,6 @@ const router = createBrowserRouter(
 const App = () => {
   return (
     <>
-      {/* <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<SharedLayout />}>
-            <Route index element={<LandingPage />} />
-            
-            <Route path="Mercedespage" element={<Mercedes />} />
-            <Route path="Lexuspage" element={<Lexus />} />
-            <Route path="Toyotapage" element={<Toyota />} />
-         
-            <Route path="Dealers" element={<Dealers />} />
-            <Route path="Support" element={<Supports />} />
-            <Route path="Mercedespage" element={<Mercedes />} />
-            <Route path="Lexuspage" element={<Lexus />} />
-            <Route path="Toyotapage" element={<Toyota />} />
-          </Route>
-         
-          <Footer />
-        </Routes>
-
-       
-      </BrowserRouter> */}{" "}
-      {/* <Footer /> */}
       <RouterProvider router={router}></RouterProvider>
     </>
   );

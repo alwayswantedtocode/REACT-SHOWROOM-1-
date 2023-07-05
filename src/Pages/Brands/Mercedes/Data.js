@@ -18,7 +18,7 @@ import EQS11 from "../../../Images/BENZ/EQS-SEDAN/EQS-Gallery_5-XL.jpg";
 import EQS22 from "../../../Images/BENZ/EQS-SUV/2023-EQS-SUV-Gallery_010-XL.jpg";
 import EQBSUV1 from "../../../Images/BENZ/EQB-SUV/Rose Gold.jpg";
 
-
+// BiCaretRight;
 
 
     

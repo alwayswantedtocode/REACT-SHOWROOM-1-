@@ -39,7 +39,7 @@ const SlideMenu = () => {
         </nav>
 
         <section className="mobile-nav">
-          {/* <div className="Mobile-navLinkContainer"> */}
+         
           <div className="Mobile-navlink">
             <NavLink className="navLink" onClick={() => setShowInfo(!showInfo)}>
               Brands

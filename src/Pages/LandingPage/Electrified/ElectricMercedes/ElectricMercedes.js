@@ -62,6 +62,7 @@ const ElectricMercedes = () => {
       </div>
 
       {/* Go green details slider */}
+      
       <div className="M-Green-details-container">
         {data.map((detail, Index) => {
           const { id, heading, desc } = detail;
@@ -87,6 +88,7 @@ const ElectricMercedes = () => {
       </div>
 
       {/* Slider indicator */}
+
       <div className="M-green-count-container">
         {data.map((indicator, Index) => {
           const { id } = indicator;

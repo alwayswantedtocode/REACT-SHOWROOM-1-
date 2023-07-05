@@ -104,6 +104,7 @@ const VehiclesSlide = () => {
 //             }
             
             //create active count indicator
+            
             return (
               <div
                 className={`slide-counter ${

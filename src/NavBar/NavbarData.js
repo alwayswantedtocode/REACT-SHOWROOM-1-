@@ -22,7 +22,7 @@ import highlander from "../Images/TOYOTAL/HIGHLANDER/HLD_MY23_0009_V001 (1).png"
 import sequoira from "../Images/TOYOTAL/SEQUOIA/Sequoira-one.png";
 import venza from "../Images/TOYOTAL/VENZA-HYBRID/VENZER-HYBRID-9.png";
 import bz4x from "../Images/TOYOTAL/bZ4X/BZ4_MY23_0065_V001.png";
-
+// import bz4x from "../Images/TOYOTAL/bZ4X/BZ4_MY23_0065_V001.png";
 const SubMenuLinks = [
   {
     page: "Brands",
