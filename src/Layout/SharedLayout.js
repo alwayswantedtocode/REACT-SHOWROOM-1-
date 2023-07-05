@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <SubMenu />
+      {/* <SubMenu /> */}
       {/* <Navigation/> */}
       <SlideMenu />
 

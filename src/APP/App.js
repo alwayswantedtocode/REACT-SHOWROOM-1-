@@ -1,15 +1,12 @@
 import {
-  BrowserRouter,
-  Routes,
   Route,
-  Switch,
   RouterProvider,
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
 //Layouts
 import SharedLayout from "../Layout/SharedLayout";
-import Brands from "../Layout/BrandsLayout";
+
 //Brand pages
 import Mercedes from "../Pages/Brands/Mercedes/MercedesPage";
 import Lexus from "../Pages/Brands/Lexus/LexusPage";

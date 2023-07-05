@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-
+import ToyotaCrown from "../../../Images/TOYOTAL/crown/Toyota-crown-use.mp4";
 import { BiPlayCircle, BiPauseCircle, BiChevronRight } from "react-icons/bi";
 
 const FirthSlide = () => {
@@ -19,7 +19,7 @@ const FirthSlide = () => {
   return (
     <div className="video-container">
       <video ref={videoRef}>
-        <source src="./images/TOYOTAL/crown/Toyota-crown-use.mp4" />
+        <source src={ToyotaCrown} />
       </video>
       {/* if button is active show if  not dont show */}
       <div className="btn-container">

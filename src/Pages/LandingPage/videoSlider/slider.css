@@ -224,7 +224,7 @@ button Styles
   /* height: 1.4rem; */
   display: flex;
   color: var(--clr-white);
-  border: 2px solid green;
+  /* border: 2px solid green; */
   padding: 0 0.3rem 0 0.3rem;
   margin: 0 0.3rem 0 0.3rem;
   text-align: center;
@@ -235,7 +235,7 @@ button Styles
 }
 .more-info-container .nav-arrow {
   display: flex;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   justify-content: center;
   align-items: center;
   color: var(--clr-white);
@@ -250,11 +250,7 @@ button Styles
 .more-info-container:hover .more-info {
   transition: all 0.3s linear;
 }
-/* .more-info-container:hover .nav-arrow {
-  display: flex;
-  padding: 0 0.1rem 0 0rem;
-  transition: all 0.3s linear;
-} */
+
 @media screen and (min-width: 768px) {
   .btn-play {
     font-size: 3rem;
@@ -308,11 +304,12 @@ button Styles
   .more-info-container .more-info {
     /* height: 2.1rem; */
     font-size: 1rem;
+    font-weight: 500;
     display: flex;
     color: var(--clr-white);
     padding: 0 0.3rem 0 0.3rem;
     /* margin: 0 0.4rem 0 0.4rem; */
-    border: 2px solid green;
+    /* border: 2px solid green; */
     text-align: center;
     justify-content: center;
     justify-items: center;
@@ -321,7 +318,7 @@ button Styles
   }
   .more-info-container .nav-arrow {
     display: flex;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -330,6 +327,7 @@ button Styles
     color: var(--clr-white);
     display: none;
     font-size: 1rem;
+    font-weight: 600;
   }
   .more-info-container:hover {
     background: rgb(221, 221, 221);
@@ -408,7 +406,7 @@ button Styles
   }
   .more-info-container .nav-arrow {
     display: flex;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -495,7 +493,7 @@ button Styles
   }
   .more-info-container .nav-arrow {
     display: flex;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     align-items: center;
     align-content: center;
     justify-content: center;

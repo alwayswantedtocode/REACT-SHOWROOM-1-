@@ -1,4 +1,4 @@
-import React, {useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { useGlobalContext } from "../GlobalContext";
 import { NavLink } from "react-router-dom";
 
@@ -19,9 +19,9 @@ const SubMenu = () => {
   //   submenu.style.top = `${bottom}px`;
   // }, [location]);
 
-  //// Click outside the Submenu to close
+  // Click outside the Submenu to close
   const handleClickOutside = (event) => {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+    if (!dropdownRef.current.contains(event.target)) {
       closeSubMenu();
     }
   };
@@ -49,17 +49,17 @@ const SubMenu = () => {
   const clickLink = () => {
     closeSubMenu();
   };
-
+  // className = "subMenu";
   return (
-    <aside
-      className={`${isSubMenuOpen ? "subMenu active" : "subMenu"}`}
+    <div
+      className="subMenu mouseover"
       ref={dropdownRef}
       onClick={(e) => e.stopPropagation()}
     >
       {Links.map((Link, firstIndex) => {
         const { names, path } = Link;
         return (
-          <div className="brandContainer" key={firstIndex}>
+          <div className="brandContainer mouseover" key={firstIndex}>
             <NavLink
               className="brand-name"
               key={path}
@@ -87,7 +87,7 @@ const SubMenu = () => {
           </div>
         );
       })}
-    </aside>
+    </div>
   );
 };
 

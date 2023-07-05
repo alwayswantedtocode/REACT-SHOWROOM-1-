@@ -3,11 +3,13 @@ import { NavLink } from "react-router-dom";
 import Logo from "../NavBar/Logo";
 import { FaSearch, FaBars } from "react-icons/fa";
 import { useGlobalContext } from "../GlobalContext";
+import SubMenu from "./SubMenu";
 
 const NavBar = () => {
-  const { openMobileMenu, openSubMenu, closeSubMenu } = useGlobalContext();
+  const { openMobileMenu, openSubMenu, closeSubMenu, isSubMenuOpen } =
+    useGlobalContext();
 
-  //DISAPEARING NAVBAR
+  // DISAPEARING NAVBAR
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
@@ -38,19 +40,19 @@ const NavBar = () => {
     // openSubMenu(brand);
     console.log(bottom);
   };
-  const removeSubMenu = (e) => {
-    if (!e.target.classList.contains("navLink")) {
-      // console.log(e.target);
-      closeSubMenu();
-    }
-  };
+  // const removeSubMenu = (e) => {
+  //   if (!e.target.classList.contains("mouseover")) {
+  //     // console.log(e.target);
+  //     closeSubMenu();
+  //   }
+  // };
 
   return (
     <header>
       <nav
         className="Nav"
         style={{ display: visible ? "flex" : "none" }}
-        onMouseOver={removeSubMenu}
+        // onMouseOver={removeSubMenu}
       >
         <div className="NavContainer">
           <div className="navLogo">
@@ -62,26 +64,46 @@ const NavBar = () => {
             <FaBars />
           </button>
           <div className="navLinkContainer">
-            <NavLink className="navLink " onMouseOver={displaySubMenu}>
+            <NavLink className="navLink mouseover" onMouseOver={displaySubMenu}>
               Brands
             </NavLink>
-            <NavLink className="navLink" to="/Dealers">
+            <NavLink className="navLink mouseover" to="/Dealers">
               Dealers
             </NavLink>
-            <NavLink className="navLink" to="/Support">
+            <NavLink className="navLink mouseover" to="/Support">
               Support
             </NavLink>
             <button className="signIn-btn">
-              <NavLink className="navLink">Sign in</NavLink>
+              <NavLink className="navLink mouseover">Sign in</NavLink>
             </button>
 
             <button className="search-btn">
-              <NavLink className="navLink">
+              <NavLink className="navLink mouseover">
                 <FaSearch />
               </NavLink>
             </button>
           </div>
         </div>
+        <aside
+          className={`${
+            isSubMenuOpen
+              ? "subMenuContainer active mouseover"
+              : "subMenuContainer"
+          }`}
+        >
+          <SubMenu className="mouseover" />
+          {/* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+          totam quo dolorum neque? Natus id iste adipisci temporibus vero?
+          Ratione distinctio voluptas incidunt praesentium minima beatae, error,
+          exercitationem voluptatibus veritatis non quae soluta ipsam
+          necessitatibus laudantium perspiciatis, tempore illo reprehenderit
+          eius voluptatem labore aliquid explicabo recusandae. Dolorum eos eius
+          ad repudiandae itaque hic inventore minima dolores fugiat dolore omnis
+          nulla, mollitia modi ipsum excepturi repellendus vel beatae nam!
+          Dolorem similique id, consequuntur, quis dolorum ea consequatur
+          voluptate quibusdam dolor tempora vero? Dolore quam ducimus aut quo
+          sed expedita placeat itaque! */}
+        </aside>
       </nav>
     </header>
   );

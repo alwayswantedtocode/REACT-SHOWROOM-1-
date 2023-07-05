@@ -165,6 +165,7 @@ p {
   margin-bottom: 0.3rem;
   font-size: 0.6rem;
   color: rgb(226, 225, 225);
+  cursor: pointer;
 }
 .footer-info li a {
   text-decoration: none;
@@ -191,6 +192,7 @@ p {
   flex: none;
   order: 0;
   flex-grow: 0;
+  cursor: pointer;
 }
 .Footer-logo {
   min-width: 3.7rem;
@@ -202,6 +204,7 @@ p {
   flex: none;
   order: 0;
   flex-grow: 0;
+  
 }
 .Footer-logo > .Footer-First-Circle {
   min-height: 2.1875rem;
@@ -235,6 +238,7 @@ p {
   margin-left: 0.2rem;
   font-size: 1.2rem;
   color: #fff;
+  
 }
 
 @media screen and (min-width: 768px) {

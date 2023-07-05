@@ -117,12 +117,6 @@ const LexusPage = () => {
           })}
         </article>
       </section>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti ipsum
-        voluptas aut possimus delectus. Commodi recusandae aliquid dolorum, eum,
-        amet aspernatur velit sint illum cum earum cupiditate pariatur nam
-        dicta?
-      </p>
     </main>
   );
 };

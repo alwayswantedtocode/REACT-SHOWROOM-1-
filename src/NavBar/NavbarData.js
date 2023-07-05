@@ -1,3 +1,28 @@
+import AClass from "../Images/BENZ/A-Class-Sedan/2022-A-SEDAN-8.jpg";
+import EClass from "../Images/BENZ/E-Class-Sedan/2022-E-SEDAN.jpg";
+import SClass from "../Images/BENZ/S-Class-Sedan/2022-S-SEDAN.jpg";
+import EQS from "../Images/BENZ/EQS-SEDAN/EQS-Gallery_4-XL.jpg";
+import GLS from "../Images/BENZ/GLS-SUV/2022-GLS-SUV.jpg";
+import Maybach from "../Images/BENZ/Mercedes-Maybach/Emerald-Green.jpg";
+import EQB from "../Images/BENZ/EQB-SUV/Rose Gold.jpg";
+import EQSSUV from "../Images/BENZ/EQS-SUV/iris (1).jpg";
+import ES from "../Images/LEXUS/ES/2022_lexus_es_5_1600x1200.jpg";
+import LS from "../Images/LEXUS/LS/dxp-2022-lexus-ls-gallery-07.png";
+import IS from "../Images/LEXUS/IS/lexus-2023-is-300.jpg";
+import LSHybrid from "../Images/LEXUS/LS/lexus-2023-ls-500-awd-fsport-atomic-silver-front-l.jpg";
+import GX from "../Images/LEXUS/GX/Lexus-GX-15-Gallery.png";
+import LX from "../Images/LEXUS/LX600/Lexus-lx-gallery-thumbnail-12-desktop.png";
+import RX from "../Images/LEXUS/RX-350-HYBRID/lexus-2023-rx-500h-f-sport-performance-copper-crest-l.jpg";
+import UX from "../Images/LEXUS/UX-HYBRID/UX-HYBRID.png";
+import corolla from "../Images/TOYOTAL/corolla/Corolla-13.png";
+import camry from "../Images/TOYOTAL/camry/Camry-one.png";
+import crown from "../Images/TOYOTAL/crown/Crown-one.png";
+import crownhybrid from "../Images/TOYOTAL/crown/toyota-crown-2023-voici-les-prix.jpeg";
+import highlander from "../Images/TOYOTAL/HIGHLANDER/HLD_MY23_0009_V001 (1).png";
+import sequoira from "../Images/TOYOTAL/SEQUOIA/Sequoira-one.png";
+import venza from "../Images/TOYOTAL/VENZA-HYBRID/VENZER-HYBRID-9.png";
+import bz4x from "../Images/TOYOTAL/bZ4X/BZ4_MY23_0065_V001.png";
+
 const SubMenuLinks = [
   {
     page: "Brands",
@@ -10,42 +35,42 @@ const SubMenuLinks = [
         subLinks: [
           {
             Description: "A-CLASS SEDAN",
-            image: "./images/BENZ/A-Class-Sedan/2022-A-SEDAN-8.jpg",
+            image: AClass,
             URL: "/",
           },
           {
             Description: "E-CLASS SEDAN",
-            image: "./images/BENZ/E-Class-Sedan/2022-E-SEDAN.jpg",
+            image: EClass,
             URL: "/",
           },
           {
             Description: "S-CLASS SEDAN",
-            image: "./images/BENZ/S-Class-Sedan/2022-S-SEDAN.jpg",
+            image: SClass,
             URL: "/",
           },
           {
             Description: "EQS SEDAN",
-            image: "./images/BENZ/EQS-SEDAN/EQS-Gallery_4-XL.jpg",
+            image: EQS,
             URL: "/",
           },
           {
             Description: "GLS SUV",
-            image: "./images/BENZ/GLS-SUV/2022-GLS-SUV.jpg",
+            image: GLS,
             URL: "/",
           },
           {
             Description: "MAYBACH GLS SUV",
-            image: "./images/BENZ/Mercedes-Maybach/Emerald-Green.jpg",
+            image: Maybach,
             URL: "/",
           },
           {
             Description: "EQB SUV",
-            image: "./images/BENZ/EQB-SUV/Rose Gold.jpg",
+            image: EQB,
             URL: "/",
           },
           {
             Description: "EQS SUV",
-            image: "./images/BENZ/EQS-SUV/iris (1).jpg",
+            image: EQSSUV,
             URL: "/",
           },
         ],
@@ -58,46 +83,43 @@ const SubMenuLinks = [
         subLinks: [
           {
             Description: "LEXUS ES",
-            image: "./images/LEXUS/ES/2022_lexus_es_5_1600x1200.jpg",
+            image: ES,
             URL: "/",
           },
           {
             Description: "LEXUS LS",
-            image: "./images/LEXUS/LS/dxp-2022-lexus-ls-gallery-07.png",
+            image: LS,
             URL: "/",
           },
 
           {
             Description: "LEXUS IS",
-            image: "./images/LEXUS/IS/lexus-2023-is-300.jpg",
+            image: IS,
             URL: "/",
           },
           {
             Description: "LEXUS LS-HYBRID",
-            image:
-              "./images/LEXUS/LS/lexus-2023-ls-500-awd-fsport-atomic-silver-front-l.jpg",
+            image: LSHybrid,
             URL: "/",
           },
           {
             Description: "LEXUS GX",
-            image: "./images/LEXUS/GX/Lexus-GX-15-Gallery.png",
+            image: GX,
             URL: "/",
           },
           {
             Description: "LEXUS LX",
-            image:
-              "./images/LEXUS/LX600/Lexus-lx-gallery-thumbnail-12-desktop.png",
+            image: LX,
             URL: "/",
           },
           {
             Description: "LEXUS RX-HYBRID",
-            image:
-              "./images/LEXUS/RX-350-HYBRID/lexus-2023-rx-500h-f-sport-performance-copper-crest-l.jpg",
+            image: RX,
             URL: "/",
           },
           {
             Description: "LEXUS UX-HYBRID",
-            image: "./images/LEXUS/UX-HYBRID/UX-HYBRID.png",
+            image: UX,
             URL: "/",
           },
         ],
@@ -111,46 +133,45 @@ const SubMenuLinks = [
         subLinks: [
           {
             Description: "COROLLA",
-            image: "./images/TOYOTAL/corolla/Corolla-13.png",
+            image: corolla,
             URL: "/",
           },
           {
             Description: "CAMRY",
-            image: "./images/TOYOTAL/camry/Camry-one.png",
+            image: camry,
             URL: "/",
           },
 
           {
             Description: "CROWN",
-            image: "./images/TOYOTAL/crown/Crown-one.png",
+            image: crown,
             URL: "/",
           },
           {
             Description: "CROWN-HYBRID",
-            image:
-              "./images/TOYOTAL/crown/toyota-crown-2023-voici-les-prix.jpeg",
+            image: crownhybrid,
             URL: "/",
           },
 
           {
             Description: "HIGHLANDER",
-            image: "./images/TOYOTAL/HIGHLANDER/HLD_MY23_0009_V001 (1).png",
+            image: highlander,
             URL: "/",
           },
 
           {
             Description: "SEQUOIRA",
-            image: "./images/TOYOTAL/SEQUOIA/Sequoira-one.png",
+            image: sequoira,
             URL: "/",
           },
           {
             Description: "VENZA-HYBRID",
-            image: "./images/TOYOTAL/VENZA-HYBRID/VENZER-HYBRID-9.png",
+            image: venza,
             URL: "/",
           },
           {
             Description: "bZ4X",
-            image: "./images/TOYOTAL/bZ4X/BZ4_MY23_0065_V001.png",
+            image: bz4x,
             URL: "/",
           },
         ],

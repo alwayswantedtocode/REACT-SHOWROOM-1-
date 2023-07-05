@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 
 import { BiPlayCircle, BiPauseCircle, BiChevronRight } from "react-icons/bi";
+import AClassSedan from "../../../Images/BENZ/A-Class-Sedan/A-Class-SEDAN-Video-use.mp4";
 
 const FirstSlide = () => {
   const [isplay, setIsplay] = useState(false);
@@ -49,7 +50,7 @@ const FirstSlide = () => {
   return (
     <div className="video-container" ref={containerRef}>
       <video ref={videoRef}>
-        <source src="./images/BENZ/A-Class-Sedan/A-Class-SEDAN-Video-use.mp4" />
+        <source src={AClassSedan} />
       </video>
 
       <div className="btn-container">

@@ -1,4 +1,24 @@
 import { BiCaretRight } from "react-icons/bi";
+import RxHybrid from "../../../Images/LEXUS/RX-350-HYBRID/large-1.png";
+import GX from "../../../Images/LEXUS/GX/large-1-removebg-preview.png";
+import LX from "../../../Images/LEXUS/LX600/large-1-removebg-preview.png";
+import RxHybrid1 from "../../../Images/LEXUS/RX-350-HYBRID/lexus-2023-overview-hero-rx500h.jpg";
+import GX1 from "../../../Images/LEXUS/GX/lexus-2023-gx-460-front-angle-atomic-silver-l.jpg";
+import LX1 from "../../../Images/LEXUS/LX600/Lexus-lx-gallery-thumbnail-5-desktop-1440x811-LEX-LXG-MY22-0007.png";
+import IS from "../../../Images/LEXUS/IS/large-1__1.png";
+import ES from "../../../Images/LEXUS/ES/large-1.png";
+import LS from "../../../Images/LEXUS/LS/LS-WHITE1.png";
+import IS1 from "../../../Images/LEXUS/IS/lexus-2023-is-300-awd-luxury-package-iridium-l.jpg";
+import ES1 from "../../../Images/LEXUS/ES/2022_lexus_es_13_1600x1200.jpg";
+import LS1 from "../../../Images/LEXUS/LS/Lexus-LS-gallery-1.png";
+import RxHybrid2 from "../../../Images/LEXUS/RX-350-HYBRID/large-1.png"
+import EsHybrid from "../../../Images/LEXUS/ES/large-1.png";
+import UxHybrid from "../../../Images/LEXUS/UX-HYBRID/UX-WHITE-2.png";
+import RxHybrid3 from "../../../Images/LEXUS/RX-350-HYBRID/lexus-2023-rx-350-awd-executive-iridium-l.jpg";
+import EsHybrid1 from "../../../Images/LEXUS/ES/2022_lexus_es_16_1600x1200.jpg";
+import UxHybrid1 from "../../../Images/LEXUS/UX-HYBRID/Lexus-UXh-gallery-desktop-1440x811-LEX-UXH-MY23-0069.png";  
+
+      
 
 const LexusCategory = [
   {
@@ -6,19 +26,19 @@ const LexusCategory = [
     tab: "SUV",
     subcat: [
       {
-        Image: "./images/LEXUS/RX-350-HYBRID/large-1.png",
+        Image: RxHybrid,
         Name: "RX HYBRID",
         Explore: "Explore",
         ArrowIcon: <BiCaretRight />,
       },
       {
-        Image: "./images/LEXUS/GX/large-1-removebg-preview.png",
+        Image: GX,
         Name: "GX",
         Explore: "Explore",
         ArrowIcon: <BiCaretRight />,
       },
       {
-        Image: "./images/LEXUS/LX600/large-1-removebg-preview.png",
+        Image: LX,
         Name: "LX",
         Explore: "Explore",
         ArrowIcon: <BiCaretRight />,
@@ -26,24 +46,21 @@ const LexusCategory = [
     ],
     catImage: [
       {
-        image:
-          "./images/LEXUS/RX-350-HYBRID/lexus-2023-overview-hero-rx500h.jpg",
+        image: RxHybrid1,
         name: "RX HYBRID",
         year: 2023,
         explore: "explore",
         quote: "Lorem ipsum dolor, sit amet adipisicing elit",
       },
       {
-        image:
-          "./images/LEXUS/GX/lexus-2023-gx-460-front-angle-atomic-silver-l.jpg",
+        image: GX1,
         name: " GX ",
         year: 2023,
         explore: "explore",
         quote: "Lorem ipsum dolor, sit amet adipisicing elit.",
       },
       {
-        image:
-          "./images/LEXUS/LX600/Lexus-lx-gallery-thumbnail-5-desktop-1440x811-LEX-LXG-MY22-0007.png",
+        image: LX1,
         name: "LX",
         year: 2023,
         explore: "explore",
@@ -56,20 +73,20 @@ const LexusCategory = [
     tab: "SEDAN",
     subcat: [
       {
-        Image: "./images/LEXUS/IS/large-1__1.png",
+        Image: IS,
         Name: "IS",
         Explore: "Explore",
         ArrowIcon: <BiCaretRight />,
       },
       {
-        Image: "./images/LEXUS/ES/large-1.png",
+        Image: ES,
         Name: "ES",
         Explore: "Explore",
         ArrowIcon: <BiCaretRight />,
       },
 
       {
-        Image: "./images/LEXUS/LS/LS-WHITE1.png",
+        Image: LS,
         Name: "LS",
         Explore: "Explore",
         ArrowIcon: <BiCaretRight />,
@@ -77,15 +94,14 @@ const LexusCategory = [
     ],
     catImage: [
       {
-        image:
-          "./images/LEXUS/IS/lexus-2023-is-300-awd-luxury-package-iridium-l.Jpg",
+        image: IS1,
         name: "IS",
         year: 2023,
         explore: "explore",
         quote: "Lorem ipsum dolor, sit amet adipisicing elit",
       },
       {
-        image: "./images/LEXUS/ES/2022_lexus_es_13_1600x1200.jpg",
+        image: ES1,
         name: "ES",
         year: 2023,
         explore: "explore",
@@ -93,7 +109,7 @@ const LexusCategory = [
       },
 
       {
-        image: "./images/LEXUS/LS/Lexus-LS-gallery-1.png",
+        image: LS1,
         name: "LS",
         year: 2023,
         explore: "explore",
@@ -107,20 +123,20 @@ const LexusCategory = [
     tab: "ELECTRIC & HYBRID",
     subcat: [
       {
-        Image: "./images/LEXUS/ES/large-1.png",
+        Image: EsHybrid,
         Name: "ES",
         Explore: "Explore",
         ArrowIcon: <BiCaretRight />,
       },
 
       {
-        Image: "./images/LEXUS/UX-HYBRID/UX-WHITE-2.png",
+        Image: UxHybrid,
         Name: "UX-HYBRID",
         Explore: "Explore",
         ArrowIcon: <BiCaretRight />,
       },
       {
-        Image: "./images/LEXUS/RX-350-HYBRID/large-1.png",
+        Image: RxHybrid2,
         Name: "RX-350-HYBRID",
         Explore: "Explore",
         ArrowIcon: <BiCaretRight />,
@@ -128,23 +144,21 @@ const LexusCategory = [
     ],
     catImage: [
       {
-        image: "./images/LEXUS/ES/2022_lexus_es_16_1600x1200.jpg",
+        image: EsHybrid1,
         name: "ES HYBRID",
         year: 2023,
         explore: "explore",
         quote: "Lorem ipsum dolor, sit amet adipisicing elit",
       },
       {
-        image:
-          "./images/LEXUS/UX-HYBRID/Lexus-UXh-gallery-desktop-1440x811-LEX-UXH-MY23-0069.png",
+        image: UxHybrid1,
         name: "UX HYBRID",
         year: 2023,
         explore: "explore",
         quote: "Lorem ipsum dolor, sit amet adipisicing elit",
       },
       {
-        image:
-          "./images/LEXUS/RX-350-HYBRID/lexus-2023-rx-350-awd-executive-iridium-l.jpg",
+        image: RxHybrid3,
         name: "RX HYBRID",
         year: 2023,
         explore: "explore",

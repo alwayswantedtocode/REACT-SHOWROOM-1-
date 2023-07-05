@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import MayBach from "../../../Images/BENZ/Mercedes-Maybach/Maybach-use.mp4";
 
 import { BiPlayCircle, BiPauseCircle, BiChevronRight } from "react-icons/bi";
 
@@ -19,7 +20,7 @@ const FourthSlide = () => {
   return (
     <div className="video-container">
       <video ref={videoRef}>
-        <source src="./images/BENZ/Mercedes-Maybach/Maybach-use.mp4" />
+        <source src={MayBach} />
       </video>
       {/* if button is active show if  not dont show */}
       <div className="btn-container">
